@@ -1,0 +1,303 @@
+:root{
+    --cor-bg-principal: #f09c00;
+    --cor-bg-segundaria: rgb(41, 41, 41);
+    --cor-bg-neutra: #fff;
+    --cor-bg-titulo: #6B08A3;
+}
+
+@media screen and (min-device-width: 1250px) {
+    *{
+        user-select: none;
+    }   
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(211, 211, 211);
+        min-height: 100vh;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial;
+        color: white;
+    }
+    
+    #container{
+        width: 550px;
+        height: 650px;
+        background-color: var(--cor-bg-segundaria);
+        box-shadow: 10px 10px 10px rgb(29, 29, 29);
+    }
+    
+    #containerPerfil{
+        width: 250px;
+        height: inherit;
+        background-color: var(--cor-bg-principal);
+        float: left;
+    }
+    
+    #perfil{
+        width: inherit;
+        height: 210px;
+        float: left;
+        margin-bottom: 25px;
+    }
+    
+    #perfil h1{
+        margin-top: 10px;
+        font-size: 1.3em;
+        text-align: center;
+        font-weight: 500;
+    }
+    
+    #perfil h2{
+        margin-top: -10px;
+        font-size: 0.9em;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    
+    #imgPerfil{
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+        /* background-color: blue; */
+        border: solid 1px black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+    
+    img{
+        width: 125px;
+        height: 120px;
+        margin: 0 auto;
+    }
+    
+    #habilidades, #contato{
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+
+    #habilidades{
+        margin-bottom: 20px;
+    }
+    
+    #contato{
+        height: 160px;
+    }
+    
+    .titulo{
+        width: 170px;
+        height: 40px;
+        margin: 0 auto;
+        background-color: var(--cor-bg-titulo);
+        font-size: 0.6em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #habilidades li {
+        margin-top: -20px;
+        list-style: square;
+        font-size: 0.9em;
+        line-height: 41px;
+    }
+    
+    #contato h3{
+        padding-left: 8px;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 10px;
+    }
+    
+    #containerInformacoes{
+        width: 280px;
+        height: inherit;
+        margin-top: 15px;
+        float: left;
+    }
+    
+    #containerInformacoes p{
+        font-size: 0.9em;
+    }
+    
+    .conteudo{
+        width: 230px;
+        min-height: 10px;
+        height: auto;
+        margin: 0 auto;
+        /* background-color: cornflowerblue; */
+    }
+    
+    .conteudo li{
+        margin-left: -20px;
+        text-align: justify;
+        font-size: 0.9em;
+        padding-bottom: 8px;
+        line-height: 20px;
+    }
+    
+    span p{
+        margin-top: 5px;
+        font-size: 0.9em;
+        line-height: 20px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-device-width:780px){
+    body{
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial;
+        color: white;
+    }
+    
+    #container{
+        width: 500px;
+        height: 650px;
+        background-color: var(--cor-bg-segundaria);
+        box-shadow: 10px 10px 25px rgb(199, 199, 199);
+    }
+    
+    #containerPerfil{
+        width: 100%;
+        height: inherit;
+        margin: 0 auto;
+        background-color: var(--cor-bg-principal);
+    }
+    
+    #perfil{
+        width: inherit;
+        height: 210px;
+        float: left;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    
+    #perfil h1{
+        margin-top: 10px;
+        font-size: 1.3em;
+        text-align: center;
+        font-weight: 500;
+    }
+    
+    #perfil h2{
+        margin-top: -10px;
+        font-size: 0.9em;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    
+    #imgPerfil{
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+        /* background-color: blue; */
+        border: solid 1px black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+    
+    img{
+        width: 125px;
+        height: 120px;
+        margin: 0 auto;
+    }
+    
+    #habilidades, #contato{
+        width: 100%;
+        height: 200px;
+        float: left;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #habilidades{
+        margin-bottom: 20px;
+    }
+    
+    #contato{
+        height: 160px;
+    }
+    
+    .titulo{
+        width: 200px;
+        height: 40px;
+        margin: 0 auto;
+        background-color: var(--cor-bg-titulo);
+        font-size: 0.6em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #habilidades li {
+        margin-left: -40px;
+        margin-top: -20px;
+        list-style: none;
+        font-size: 0.9em;
+        line-height: 41px;
+    }
+    
+    #contato h3{
+        padding-left: 8px;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 10px;
+    }
+    
+    #containerInformacoes{
+        width: 100%;
+        height: inherit;
+        background-color: var(--cor-bg-segundaria);
+        padding-top: 20px;
+    }
+    
+    #containerInformacoes p{
+        font-size: 0.9em;
+    }
+    
+    .conteudo{
+        width: 230px;
+        min-height: 10px;
+        height: auto;
+        margin-left: 40px;
+    }
+    
+    .conteudo li{
+        margin-left: -20px;
+        text-align: justify;
+        font-size: 0.9em;
+        padding-bottom: 8px;
+        line-height: 20px;
+    }
+    
+    span p{
+        margin-top: 5px;
+        font-size: 0.9em;
+        line-height: 20px;
+        text-align: justify;
+    }
+}
+
+
+
